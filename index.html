@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap Board: Your gateway to the best tools and resources for startup success.">
+    <meta name="keywords" content="startup, resources, tools, web development, app development, design, creative tools">
+    <title>Bootstrap Board</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .header-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .nav-link:hover {
+            border-bottom: 2px solid white;
+        }
+        .category:hover {
+            background: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 100%);
+            transform: translateY(-5px);
+        }
+        .button-primary {
+            background-color: #764ba2;
+        }
+        .button-primary:hover {
+            background-color: #667eea;
+        }
+        .badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+        }
+        .badge-free {
+            background-color: #48bb78; /* Tailwind green-500 */
+            color: white;
+        }
+        .badge-paid {
+            background-color: #f56565; /* Tailwind red-500 */
+            color: white;
+        }
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 smooth-scroll">
+    <header class="header-bg text-white py-10">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-extrabold">Bootstrap Board</h1>
+            <p class="text-xl mt-4">Your gateway to the best tools and resources for startup success</p>
+        </div>
+    </header>
+    <nav class="bg-gray-800 text-white py-4 shadow-md sticky-nav">
+        <div class="container mx-auto flex justify-between items-center">
+            <strong class="text-2xl">Bootstrap Board</strong>
+            <ul class="flex space-x-6">
+                <li><a href="#web-app-dev" class="nav-link">Web & App Development</a></li>
+                <li><a href="#design-creative" class="nav-link">Design & Creative Tools</a></li>
+                <li><a href="#funding-finance" class="nav-link">Funding & Finance</a></li>
+                <li><a href="#suggestions" class="nav-link">Suggestions</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container mx-auto py-16">
+        <!-- Web and App Development -->
+        <section id="web-app-dev" class="mb-20">
+            <h2 class="text-4xl font-semibold mb-12 text-center text-blue-800">Web and App Development</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- No-Code Development Tools -->
+                <div class="category bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-2xl font-medium mb-6 text-blue-800">No-Code Development Tools</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://webflow.com" target="_blank" class="block text-blue-600 hover:underline">Webflow</a>
+                            <p class="text-sm text-gray-600">Build modern websites without coding.</p>
+                            <span class="badge badge-free">Free</span>
+                        </li>
+                        <li>
+                            <a href="https://bubble.io" target="_blank" class="block text-blue-600 hover:underline">Bubble</a>
+                            <p class="text-sm text-gray-600">Create and operate sophisticated web applications without coding.</p>
+                            <span class="badge badge-paid">Free + Paid</span>
+                        </li>
+                        <li>
+                            <a href="https://buildfire.com" target="_blank" class="block text-blue-600 hover:underline">Buildfire</a>
+                            <p class="text-sm text-gray-600">Robust app development platform for iOS and Android, no coding required.</p>
+                            <span class="badge badge-paid">Free + Paid</span>
+                        </li>
+                        <li>
+                            <a href="https://glideapps.com" target="_blank" class="block text-blue-600 hover:underline">Glideapps</a>
+                            <p class="text-sm text-gray-600">Transform Google Sheets into apps in minutes.</p>
+                            <span class="badge badge-paid">Free + Paid</span>
+                        </li>
+                        <li>
+                            <a href="https://pory.io" target="_blank" class="block text-blue-600 hover:underline">Pory</a>
+                            <p class="text-sm text-gray-600">Develop functional apps from Airtable without needing to code.</p>
+                            <span class="badge badge-paid">Free + Paid</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Interface and UX Design -->
+                <div class="category bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-2xl font-medium mb-6 text-blue-800">Interface and UX Design</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://figma.com" target="_blank" class="block text-blue-600 hover:underline">Figma</a>
+                            <p class="text-sm text-gray-600">Premier tool for collaborative interface design.</p>
+                            <span class="badge badge-paid">Free + Paid</span>
+                        </li>
+                        <li>
+                            <a href="https://framer.com" target="_blank" class="block text-blue-600 hover:underline">Framer</a>
+                            <p class="text-sm text-gray-600">Comprehensive toolset for optimal product design teamwork.</p>
+                            <span class="badge badge-paid">Free + Paid</span>
+                        </li>
+                        <li>
+                            <a href="https://devdojo.com/tails" target="_blank" class="block text-blue-600 hover:underline">Devdojo Tails</a>
+                            <p class="text-sm text-gray-600">Premier TailwindCSS page builder with extensive component selection.</p>
+                            <span class="badge badge-paid">Free + Paid</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Extension and API Tools -->
+                <div class="category bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-2xl font-medium mb-6 text-blue-800">Extension and API Tools</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://extension.dev" target="_blank" class="block text-blue-600 hover:underline">Extension.dev</a>
+                            <p class="text-sm text-gray-600">Effortless browser extension creation.</p>
+                            <span class="badge badge-free">Free</span>
+                        </li>
+                        <li>
+                            <a href="https://nocodeapi.com" target="_blank" class="block text-blue-600 hover:underline">NoCodeAPI</a>
+                            <p class="text-sm text-gray-600">Simplify API connections without backend development.</p>
+                            <span class="badge badge-paid">Free + Paid</span>
+                        </li>
+                        <li>
+                            <a href="https://zapier.com" target="_blank" class="block text-blue-600 hover:underline">Zapier</a>
+                            <p class="text-sm text-gray-600">Automate interactions between over 3000 web apps.</p>
+                            <span class="badge badge-paid">Free + Paid</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design and Creative Tools -->
+        <section id="design-creative" class="mb-20">
+            <h2 class="text-4xl font-semibold mb-12 text-center text-blue-800">Design and Creative Tools</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Graphic and Icon Resources -->
+                <div class="category bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-2xl font-medium mb-6 text-blue-800">Graphic and Icon Resources</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://flaticon.com" target="_blank" class="block text-blue-600 hover:underline">Flaticon</a>
+                            <p class="text-sm text-gray-600">Extensive library of vector icons and stickers.</p>
+                            <span class="badge badge-paid">Free + Paid</span>
+                        </li>
+                        <li>
+                            <a href="https://freepik.com" target="_blank" class="block text-blue-600 hover:underline">Freepik</a>
+                            <p class="text-sm text-gray-600">Diverse collection of graphic resources, including vectors, photos, and PSD files.</p>
+                            <span class="badge badge-paid">Free + Paid</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Color and Design Tools -->
+                <div class="category bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-2xl font-medium mb-6 text-blue-800">Color and Design Tools</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://coolers.co" target="_blank" class="block text-blue-600 hover:underline">Coolers</a>
+                            <p class="text-sm text-gray-600">Develop or discover beautiful color schemes.</p>
+                            <span class="badge badge-free">Free</span>
+                        </li>
+                        <li>
+                            <a href="https://spline.design" target="_blank" class="block text-blue-600 hover:underline">Spline</a>
+                            <p class="text-sm text-gray-600">Innovative tool for creating 3D designs for the web.</p>
+                            <span class="badge badge-free">Free</span>
+                        </li>
+                        <li>
+                            <a href="https://magicpattern.design" target="_blank" class="block text-blue-600 hover:underline">MagicPattern</a>
+                            <p class="text-sm text-gray-600">Effortless creation of stunning graphics with multiple tools.</p>
+                            <span class="badge badge-free">Free Trial</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Mockup and Prototyping -->
+                <div class="category bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-2xl font-medium mb-6 text-blue-800">Mockup and Prototyping</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://mockuuups.studio" target="_blank" class="block text-blue-600 hover:underline">Mockuuups Studio</a>
+                            <p class="text-sm text-gray-600">Easily place visuals in over a thousand scenes to create mockups.</p>
+                            <span class="badge badge-paid">Free + Paid</span>
+                        </li>
+                        <li>
+                            <a href="https://previewed.app" target="_blank" class="block text-blue-600 hover:underline">Previewed.app</a>
+                            <p class="text-sm text-gray-600">Drag-and-drop mockup creation in-browser, including promotional videos.</p>
+                            <span class="badge badge-paid">Free + Paid</span>
+                        </li>
+                        <li>
+                            <a href="https://wickedtemplates.com" target="_blank" class="block text-blue-600 hover:underline">Wicked Templates</a>
+                            <p class="text-sm text-gray-600">Sleek, Tailwind CSS-based landing pages tailored for startups.</p>
+                            <span class="badge badge-free">Free Trial</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Funding and Finance -->
+        <section id="funding-finance" class="mb-20">
+            <h2 class="text-4xl font-semibold mb-12 text-center text-blue-800">Funding and Finance</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Funding Platforms -->
+                <div class="category bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-2xl font-medium mb-6 text-blue-800">Funding Platforms</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://kickstarter.com" target="_blank" class="block text-blue-600 hover:underline">Kickstarter</a>
+                            <p class="text-sm text-gray-600">Crowdfunding platform for creative projects.</p>
+                            <span class="badge badge-free">Free</span>
+                        </li>
+                        <li>
+                            <a href="https://indiegogo.com" target="_blank" class="block text-blue-600 hover:underline">Indiegogo</a>
+                            <p class="text-sm text-gray-600">Global crowdfunding platform for a wide range of ideas.</p>
+                            <span class="badge badge-free">Free</span>
+                        </li>
+                        <li>
+                            <a href="https://seedrs.com" target="_blank" class="block text-blue-600 hover:underline">Seedrs</a>
+                            <p class="text-sm text-gray-600">Equity crowdfunding platform for startups.</p>
+                            <span class="badge badge-free">Free</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Venture Capital -->
+                <div class="category bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-2xl font-medium mb-6 text-blue-800">Venture Capital</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://yc.com" target="_blank" class="block text-blue-600 hover:underline">Y Combinator</a>
+                            <p class="text-sm text-gray-600">Startup accelerator providing seed funding.</p>
+                            <span class="badge badge-free">Free</span>
+                        </li>
+                        <li>
+                            <a href="https://500.co" target="_blank" class="block text-blue-600 hover:underline">500 Startups</a>
+                            <p class="text-sm text-gray-600">Early-stage venture fund and seed accelerator.</p>
+                            <span class="badge badge-free">Free</span>
+                        </li>
+                        <li>
+                            <a href="https://techstars.com" target="_blank" class="block text-blue-600 hover:underline">Techstars</a>
+                            <p class="text-sm text-gray-600">Seed accelerator for startups.</p>
+                            <span class="badge badge-free">Free</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Financial Tools -->
+                <div class="category bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <h3 class="text-2xl font-medium mb-6 text-blue-800">Financial Tools</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://stripe.com" target="_blank" class="block text-blue-600 hover:underline">Stripe</a>
+                            <p class="text-sm text-gray-600">Online payment processing for internet businesses.</p>
+                            <span class="badge badge-free">Free</span>
+                        </li>
+                        <li>
+                            <a href="https://quickbooks.intuit.com" target="_blank" class="block text-blue-600 hover:underline">QuickBooks</a>
+                            <p class="text-sm text-gray-600">Accounting software for small businesses.</p>
+                            <span class="badge badge-paid">Free + Paid</span>
+                        </li>
+                        <li>
+                            <a href="https://brex.com" target="_blank" class="block text-blue-600 hover:underline">Brex</a>
+                            <p class="text-sm text-gray-600">Credit cards and cash management for startups.</p>
+                            <span class="badge badge-free">Free</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="suggestions" class="bg-gray-100 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold mb-8 text-blue-800">We Value Your Feedback</h2>
+            <h3 class="text-2xl font-medium mb-12">Have a suggestion for a tool/resource, feature, or improvement?</h3>
+            <form class="max-w-xl mx-auto">
+                <div class="grid grid-cols-1 gap-6 mb-6">
+                    <textarea id="suggestion" name="suggestion" placeholder="Your Suggestion" aria-label="Your Suggestion" class="p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" required></textarea>
+                </div>
+                <button type="submit" onclick="event.preventDefault()" class="button-primary text-white py-3 px-6 rounded hover:bg-blue-600 transition-colors">Submit Suggestion</button>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white py-8 mt-12 shadow-inner">
+        <div class="container mx-auto text-center">
+            <small class="block mb-4">
+                <a href="#web-app-dev" class="hover:underline">Web & App Development</a> • <a href="#design-creative" class="hover:underline">Design & Creative Tools</a> • <a href="#funding-finance" class="hover:underline">Funding & Finance</a> • <a href="#suggestions" class="hover:underline">Suggestions</a>
+            </small>
+            <p class="mt-2">© 2024 Bootstrap Board. All rights reserved.</p>
+        </div>
+    </footer>
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Bootstrap Board",
+        "url": "http://www.bootstrapboard.com"
+    }
+    </script>
+</body>
+</html>
