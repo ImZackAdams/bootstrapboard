@@ -9,8 +9,6 @@ def init_db():
     c.execute('''
         CREATE TABLE IF NOT EXISTS suggestions (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT NOT NULL,
-            email TEXT NOT NULL,
             suggestion TEXT NOT NULL
         )
     ''')
@@ -23,14 +21,12 @@ def index():
 
 @app.route('/submit_suggestion', methods=['POST'])
 def submit_suggestion():
-    name = request.form['name']
-    email = request.form['email']
     suggestion = request.form['suggestion']
 
     conn = sqlite3.connect('suggestions.db')
     c = conn.cursor()
-    c.execute('INSERT INTO suggestions (name, email, suggestion) VALUES (?, ?, ?)',
-              (name, email, suggestion))
+    c.execute('INSERT INTO suggestions (suggestion) VALUES (?)',
+              (suggestion,))
     conn.commit()
     conn.close()
 
